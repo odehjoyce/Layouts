@@ -1,0 +1,60 @@
+
+*{
+ padding: 0;
+ margin: 0;
+}
+
+body{
+ background-color: #030e19;
+ display: flex;
+ min-height: 100vh;
+ place-items: center;
+}
+
+main{
+ display: grid;
+ grid-template-areas:
+  'a a a b'
+  'a a a b'
+  'c c d d'
+  'c c e e';
+ gap:10px;
+ width: 50%;
+ margin: auto;
+}
+
+main div{
+ padding: 35px;
+ text-align: center;
+
+}
+
+.orange{
+ background-color: orangered;
+ grid-area: a;
+ height: 100px;
+ width: 400px;
+ padding-left: 10px;
+}
+
+.yellow{
+ background-color: yellow;
+ grid-area: b;
+ width: 200px;
+}
+
+.green{
+ background-color: darkgreen;
+ grid-area: c;
+}
+
+.blue{
+ background-color: aqua;
+ grid-area: d;
+}
+
+.black{
+ background-color: aqua;
+ grid-area: e;
+ height: 50px;
+}
